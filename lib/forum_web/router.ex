@@ -7,6 +7,7 @@ defmodule ForumWeb.Router do
 
   scope "/api", ForumWeb do
     pipe_through :api
+    post "/accounts/create", AccountController, :create
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
